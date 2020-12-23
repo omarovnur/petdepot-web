@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/petdepot-web/'
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/petdepot-web/'
+      : '/'
   }
