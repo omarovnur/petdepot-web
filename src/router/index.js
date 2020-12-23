@@ -9,7 +9,7 @@ import EditProduct from '@/components/EditProduct'
 Vue.use(Router)
 
 export default new Router({
-  base: 'hash',
+  mode: 'hash',
   routes: [
     {
       path: '/',
