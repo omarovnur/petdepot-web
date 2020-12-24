@@ -40,7 +40,7 @@ export default {
       }
   },
   created: function() {
-    axios.get('/petdepot-web/static/products.json').then((response) =>{
+    axios.get('/static/products.json').then((response) =>{
       this.product = response.data.products.filter(data => data.id == this.$route.params.id)[0]
       this.product.image = '/' + this.product.image;
      
